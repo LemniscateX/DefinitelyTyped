@@ -52,8 +52,6 @@ function test_chroma() {
     chroma.random();
     chroma.contrast("pink", "hotpink");
     chroma.contrast("pink", "purple");
-    chroma.contrastAPCA("hotpink", "pink");
-    chroma.contrastAPCA("purple", "pink");
     chroma.brewer.OrRd;
     const data = [
         3.0,

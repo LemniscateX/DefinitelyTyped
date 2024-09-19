@@ -133,14 +133,6 @@ declare namespace chroma {
         contrast(color1: string | Color, color2: string | Color): number;
 
         /**
-         * Computes the APCA contrast {@link https://www.myndex.com/APCA/} ratio of a text color against its background color. 
-         * The basic idea is that you check the contrast between the text and background color
-         * and then use this lookup table {@link https://raw.githubusercontent.com/Myndex/apca-w3/master/images/APCAlookupByContrast.jpeg}
-         * to find the minimum font size you're allowed to use (given the font weight and purpose of the text).
-         */
-        contrastAPCA(text: string | Color, background: string | Color): number;
-
-        /**
          * Computes the eucledian distance between two colors in a given color space (default is 'lab').
          * {@link https://en.wikipedia.org/wiki/Euclidean_distance#Three_dimensions}
          */
